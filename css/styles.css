@@ -88,6 +88,10 @@ body {
   margin-bottom: var(--margin-bottom-1);
 }
 
+.top {
+  margin-top: 12rem;
+}
+
 /*Buttons*/
 
 .btn {
@@ -198,6 +202,10 @@ canvas {
 
 
 /*About Page*/
+
+#about {
+  margin-bottom: 6rem;
+}
 
 .img-about{
   width: 15rem;
@@ -431,6 +439,14 @@ color: blue;
 
   .b-card {
     width: 65%;
+  }
+
+  .top {
+    margin-top: 15rem;
+  }
+
+  #about {
+    margin-bottom: 10rem;
   }
 }
 
