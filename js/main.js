@@ -53,7 +53,6 @@ function start (){
       }else{
         more.textContent = "More >>"
       }
-      more.blur()
     }) 
   }
 
