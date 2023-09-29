@@ -124,25 +124,14 @@ function start (){
   // Contact form v alidation
   function validation(){
     const form = document.getElementById("contact")
-    const name = document.getElementById("name")
     const email= document.getElementById("email")
-    const message = document.getElementById("message")
+    const emailPattern = "/^[a-z][a-z0-9_-]+@[a-z0-9_-]+.[a-z]{3,4}$/g"
     form.addEventListener("submit", (e) => {
         
       e.preventDefault()
 
-      if(name.value === ""){
-        alert("Enter all fields please!")
-        return
-      }
-
-      if(email.value === ""){
-        alert("Enter all fields please!")
-        return
-      }
-
-      if(message.value === ""){
-        alert("Enter all fields please!")
+      if (! email.value.match(emailPattern)){
+        alert("Please enter valid mail address!")
         return
       }
 
