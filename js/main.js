@@ -130,7 +130,7 @@ function start (){
       
       e.preventDefault()
 
-      if (email.value.test(/^[a-z][a-z0-9_-]+@[a-z0-9_-]+[.][a-z]{3,4}$/g) === null){
+      if (email.value.match(/^[a-z][a-z0-9_-]+@[a-z0-9_-]+[.][a-z]{3,4}$/g) === null){
         alert("Please enter valid mail address!")
         return
       }
