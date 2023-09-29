@@ -125,20 +125,19 @@ function start (){
   function validation(){
     const form = document.getElementById("contact")
     const email= document.getElementById("email")
-    const emailPattern = "/^[a-z][a-z0-9_-]+@[a-z0-9_-]+.[a-z]{3,4}$/g"
+  
     form.addEventListener("submit", (e) => {
-        
+      
       e.preventDefault()
 
-      if (! email.value.match(emailPattern)){
+      if (email.value.test(/^[a-z][a-z0-9_-]+@[a-z0-9_-]+[.][a-z]{3,4}$/g) === null){
         alert("Please enter valid mail address!")
         return
       }
-
+      
       form.submit()
     })
   }
-
 
 
   // Initilise website functions
