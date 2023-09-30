@@ -136,6 +136,7 @@ function start (){
       }
       
       form.submit()
+      form.reset()
     })
   }
 
