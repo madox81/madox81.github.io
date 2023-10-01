@@ -1,4 +1,4 @@
-function start (){
+(function start (){
   // Homepage functions
 
   // Type Writer effect 
@@ -36,7 +36,6 @@ function start (){
     }
 
     write()
-
   }
 
 
@@ -121,7 +120,9 @@ function start (){
     })
   }
 
-  // Contact form v alidation
+  // Contact form functions
+
+  // Form validation
   function validation(){
     const form = document.getElementById("contact")
     const email= document.getElementById("email")
@@ -141,8 +142,8 @@ function start (){
   }
 
 
-  // Initilise website functions
-  (function init (){
+  // Initilize webpage functions
+  function init (){
 
     switch (window.location.pathname) {
       case "/":
@@ -161,15 +162,12 @@ function start (){
       case "/projects.html":
         offSet()
         break;
-      default:
-        // statements_def
-        break;
     }
-  })()
+  }
 
-}
+  // When DOM loaded initialize
+  document.addEventListener("DOMContentLoaded", () => {
+    init()
+  })
 
-// Run 
-document.addEventListener("DOMContentLoaded", () => {
-  start()
-})
+}())

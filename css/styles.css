@@ -1,27 +1,28 @@
 /*Imports */
 
+/*Imporrt Roboto sans-srif font from Google fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
 
-/* Variable */
+/******************* Variable *****************/
 :root {
   --font-color: #FFF;          /* Main color for buttons and links */
   --primary-color: #283593;    /* Main color for headings and navigation bar */
   --secondary-color: #C5CAE9;  /* Body main color */
   --button-color:#3949AB;      /* Buttons main color */
-  --highlight-1: #82B1FF;
-  --highlight-2: #BBDEFB;
-  --highlight-3: #90CAF9;
-  --font-size: 75%;           /* Main font size for buttons, links and par-1 class  */
+  --highlight-1: #82B1FF;      /* Text Highlite color */
+  --highlight-2: #BBDEF;      /* Text Highlite color */
+  --highlight-3: #90CAF9;      /* Text Highlite color */
+  --font-size: 75%;            /* Main font 16px * 75% = 12px = 1rem */
   --margin-bottom-1: 1rem;     /* Utilities */
   --margin-bottom-2: 2rem;     
   --line-height: 1.6;
 }
 
-/*End*/
+/********************* End *********************/
 
 
-/* CSS reset */
+/******************* CSS reset *****************/
 *{
   margin:0;
   padding: 0;
@@ -54,10 +55,10 @@ body {
   background-color: var(--secondary-color);
 }
 
-/*End*/
+/********************** End ********************/
 
 
-/*Utilities*/
+/********************* Utilities ***************/
 
 .context {
   position: absolute;
@@ -70,7 +71,7 @@ body {
   text-align: center;
 }
 
-/*Paragraph style*/
+/* Paragraph style */
 
 .par-1{
   font-size: 1.2rem;
@@ -84,6 +85,7 @@ body {
   margin-bottom: var(--margin-bottom-1);
 }
 
+/* Margins */
 .header{
   margin-bottom: var(--margin-bottom-1);
 }
@@ -92,7 +94,7 @@ body {
   margin-top: 15rem;
 }
 
-/*Buttons*/
+/* Buttons */
 
 .btn {
   display: inline-block;
@@ -113,7 +115,7 @@ body {
   color: var(--font-color);
 }
 
-/*Navigation bar*/
+/* Navigation bar */
 
 nav {
   display: flex;
@@ -131,11 +133,8 @@ nav.hide{
 }
 
 .links{
-  
   float: left;
-
 }
-
 
 .links a {
   display: inline-block;
@@ -151,23 +150,22 @@ nav.hide{
   box-shadow: inset 0 100px 0 0 #536DFE;
 }
 
-
+/* Scroll up icon */
 .scroll-up {
   position: fixed;
-  left: 85vw;
+  left: 90vw;
   bottom: .5%;
   cursor: pointer;
   font-size: 2.5rem;
   color: var(--button-color);
 }
 
+/******************* End *********************/
 
-/*End*/
 
+/************** Home Page Style **************/
 
-/*Home Page Style*/
-
-/*Particls*/
+/* Particls */
 
 #particles-js{
   position: absolute;
@@ -179,7 +177,7 @@ canvas {
   display: block;
 }
 
-/*Main Image*/
+/* Main Image */
 .img-home {
   max-width: 45vw;
   max-height: 45vh;
@@ -189,7 +187,7 @@ canvas {
 }
 
 
-/*Typewrite effect style*/
+/* Typewrite effect style */
 
 .typeWriter::after {
   content: "|";
@@ -197,11 +195,11 @@ canvas {
   color: #536DFE;
 }
 
-/*End*/
+/********************* End ******************/
 
 
 
-/*About Page*/
+/***************** About Page ***************/
 
 #about {
   margin-bottom: 6rem;
@@ -226,16 +224,16 @@ canvas {
   margin-bottom: var(--margin-bottom-1);
 }
 
+
 .about-header::after {
   content: "";
   display: block;
   width: 25%;
   height: 5px;
   background-color: var(--primary-color);
-  color: var(--primary-color);
 }
 
-/*Heddin Paragraph*/
+/* Heddin Paragraph */
  .hidden-p{
   display: none;
  }
@@ -259,8 +257,7 @@ canvas {
   background-color: var(--highlight-3);
 }
 
-
-/*Business Caerd*/
+/* Business Card */
 .b-card{
   position: relative;
   display: flex;
@@ -275,10 +272,7 @@ canvas {
   padding-top: 1rem;
   border-left: .5rem solid var(--primary-color);
   border-right: .5rem solid var(--primary-color);
-/*  background-color: #E8EAF6;*/
-
 }
-
 
 .b-card::before{
   content: "";
@@ -299,6 +293,7 @@ canvas {
 
 }
 
+/* Business Card code content*/
 .space {
         margin-left: 2rem;
       }
@@ -319,6 +314,7 @@ color: blue;
   color: cyan;
 }
 
+/* Image slider */
 .slide-container {
   width: 25rem;
   margin: auto;
@@ -376,9 +372,11 @@ color: blue;
   background-color: #536DFE;
 }
 
+/************************ End *******************/
 
-/*Conatct Page*/
+/******************* Conatct Page ***************/
 
+/* Social icons */
 .socials {
   display: flex;
   justify-content: center;
@@ -387,11 +385,9 @@ color: blue;
   margin-bottom: 1rem;
 }
 
+/************************End ********************/
 
-
-/*End*/
-
-/*Animation*/
+/********************* Animation ****************/
  @keyframes fadein {
    0% {
     opacity: 0;
@@ -401,16 +397,17 @@ color: blue;
    }
 }
 
-/*End*/
+/*********************** End ********************/
 
-/*Breakpoints*/
-@media (min-width: 576px){
-  .b-card {
-    width: 55%;
-    padding: 1rem;
-  }
-}
+/*******************  Breakpoints ***************/
 
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+/* Not Applied */
+
+/* Medium devices (tablets, 768px and up) */
 @media (min-width:768px) {
 
   :root{
@@ -423,7 +420,8 @@ color: blue;
   }
   
 }
-
+  
+/* Large devices (desktops, 992px and up) */
  @media (min-width:992px) {
   
   .b-card {
@@ -431,6 +429,7 @@ color: blue;
   }
 }
 
+/* X-Large devices (large desktops, 1200px and up)*/
 @media (min-width:1200px) {
   
   :root{
@@ -450,4 +449,4 @@ color: blue;
   }
 }
 
-/*End*/ 
+/********************* End ******************/ 
