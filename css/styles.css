@@ -11,7 +11,7 @@
   --secondary-color: #C5CAE9;  /* Body main color */
   --button-color:#3949AB;      /* Buttons main color */
   --highlight-1: #82B1FF;      /* Text Highlite color */
-  --highlight-2: #BBDEF;      /* Text Highlite color */
+  --highlight-2: #BBDEFB;      /* Text Highlite color */
   --highlight-3: #90CAF9;      /* Text Highlite color */
   --font-size: 75%;            /* Main font 16px * 75% = 12px = 1rem */
   --margin-bottom-1: 1rem;     /* Utilities */
@@ -81,10 +81,6 @@ body {
 /* Margins */
 .header{
   margin-bottom: var(--margin-bottom-1);
-}
-
-.top {
-  margin-top: 12rem;
 }
 
 /* Buttons */
@@ -196,6 +192,7 @@ canvas {
 /***************** About Page ***************/
 
 #about {
+  max-resolution: 12rem;
   margin-bottom: 6rem;
 }
 
@@ -434,11 +431,8 @@ color: blue;
     width: 65%;
   }
 
-  .top {
-    margin-top: 15rem;
-  }
-
   #about {
+    margin-top:15rem;
     margin-bottom: 10rem;
   }
 }
