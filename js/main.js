@@ -147,7 +147,7 @@
 
     switch (window.location.pathname) {
       case "/":
-        particlesJS.load('particles-js', './js/particles.json', function () {})
+        particlesJS.load('particles-js', './js/particles.json')
         setTimeout(typeWriterEffect, 1250)
         break;
       case "/about.html":
