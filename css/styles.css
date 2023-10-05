@@ -16,7 +16,6 @@
   --font-size: 75%;            /* Main font 16px * 75% = 12px = 1rem */
   --margin-bottom-1: 1rem;     /* Utilities */
   --margin-bottom-2: 2rem;     
-  --line-height: 1.6;
 }
 
 /********************* End *********************/
@@ -69,12 +68,10 @@ body {
 .par-1{
   font-size: 1.2rem;
   text-align: justify;
-  line-height: var(--line-height);
 }
 
 .par-2 {
   font-size: 1.6rem;
-  line-height: var(--line-height);
   margin-bottom: var(--margin-bottom-1);
 }
 
@@ -128,7 +125,7 @@ nav.hide{
 .links a {
   display: inline-block;
   color: var(--font-color);
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: 1rem 2rem;
   transition: all 0.5s ease-in-out;
   background-color: var(--button-color);
@@ -193,7 +190,7 @@ canvas {
 
 #about {
   margin-top: 12rem;
-  margin-bottom: 6rem;
+  margin-bottom: 11rem;
 }
 
 .img-about{
@@ -402,11 +399,15 @@ color: blue;
 @media (min-width:768px) {
 
   :root{
-    --font-size: 90%;
+    --font-size: 85%;
+  }
+
+  .par-1 {
+    font-size: 1rem;
   }
 
   .b-card {
-    width: 55%;
+    width: 50%;
     padding: 1rem;
   }
   
@@ -414,6 +415,10 @@ color: blue;
   
 /* Large devices (desktops, 992px and up) */
  @media (min-width:992px) {
+
+  .par-1 {
+    font-size: 1.3rem;
+  }
   
   .b-card {
     width: 75%;
@@ -431,10 +436,6 @@ color: blue;
     width: 65%;
   }
 
-  #about {
-    margin-top:15rem;
-    margin-bottom: 10rem;
-  }
 }
 
 /********************* End ******************/ 
