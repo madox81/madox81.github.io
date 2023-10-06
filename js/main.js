@@ -33,7 +33,7 @@
         }
         setTimeout(write, 2000)
       }
-    }
+    } 
 
     write()
   }
@@ -62,6 +62,7 @@
     const slideItems = document.querySelectorAll(".slide-item")
     let currentIndex = 0
 
+    // Show item
     function show(index){
       // Hide any showed slide item
       slideItems.forEach(item => {
@@ -71,17 +72,20 @@
       slideItems[index].style.display = "block"
     }
 
+    // Show items automatically each 3s 
     // Infinit loop using recursion with 3s interval
     function autoShow(){
       next()
       setTimeout(autoShow, 3000)
     }
 
+    // Show next iyem
     function next(){
       currentIndex = (currentIndex + 1) % slideItems.length
       show(currentIndex)
     }
 
+    // Show previous item
     function previous(){
       currentIndex = (currentIndex -1 + slideItems.length) % slideItems.length
       show(currentIndex)
@@ -102,7 +106,7 @@
     const nav = document.querySelector('nav')
     const navOffset = nav.offsetTop
     window.addEventListener('scroll', () => {
-      const navOffset = nav.offsetTop
+      // const navOffset = nav.offsetTop
       if(window.pageYOffset > navOffset){
         nav.classList.add('hide')
       }else{
