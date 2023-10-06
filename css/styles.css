@@ -416,10 +416,18 @@ color: blue;
 /* Large devices (desktops, 992px and up) */
  @media (min-width:992px) {
 
+  /*.link a {
+    font-size: 1rem;
+  }*/
+
   .par-1 {
     font-size: 1.3rem;
   }
   
+  .links a {
+    font-size: 1rem;
+  }
+
   .b-card {
     width: 75%;
   }
@@ -432,6 +440,7 @@ color: blue;
     --font-size: 100%;
   }
 
+  
   .b-card {
     width: 65%;
   }

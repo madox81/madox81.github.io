@@ -63,12 +63,15 @@
     let currentIndex = 0
 
     function show(index){
+      // Hide any showed slide item
       slideItems.forEach(item => {
         item.style.display = "none"
       })
+      // Show slide item according to index using display ptoperty
       slideItems[index].style.display = "block"
     }
 
+    // Infinit loop using recursion with 3s interval
     function autoShow(){
       next()
       setTimeout(autoShow, 3000)
