@@ -190,7 +190,8 @@ canvas {
 
 #about {
   margin-top: 12rem;
-  margin-bottom: 11rem;
+  margin-bottom: 5rem;
+  min-height: 56rem;
 }
 
 .img-about{
@@ -251,7 +252,7 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 85%;
   border-radius: 5px;
   font-size: 1.1rem;
   font-weight: 500;
@@ -394,7 +395,12 @@ color: blue;
 
 /* Small devices (landscape phones, 576px and up) */
 /* Not Applied */
-
+@media (min-width:550px){
+  .b-card {
+    width: 60%;
+    padding: 1rem;
+  }
+}
 /* Medium devices (tablets, 768px and up) */
 @media (min-width:768px) {
 
@@ -430,6 +436,16 @@ color: blue;
 
   .b-card {
     width: 75%;
+  }
+
+  .about-header{
+    margin-top: 3rem;
+  }
+
+  #about {
+    margin-top: 13rem;
+    margin-bottom: 5rem;
+    min-height: 37rem;
   }
 }
 
