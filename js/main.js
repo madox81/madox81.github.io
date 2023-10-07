@@ -52,7 +52,6 @@
       e.target.parentNode.style.display = "none"
     })
 
-
     less.addEventListener("click", (e) => {
       more.style.display = "inline"
       hidden[0].classList.toggle("show")
@@ -139,6 +138,7 @@
   function validation(){
     const form = document.getElementById("contact")
     const email= document.getElementById("email")
+    const hony = document.getElementById("_hony")
   
     form.addEventListener("submit", (e) => {
       
@@ -148,7 +148,11 @@
         alert("Please enter valid mail address!")
         return
       }
-      
+
+      if(hony.value !==""){
+        return
+      }
+
       form.submit()
       form.reset()
     })
