@@ -173,6 +173,13 @@ canvas {
   filter: drop-shadow(0px 5px 10px black) ;
 }
 
+/*Bye effect*/
+.bye {
+  display: inline-block;
+  transform-origin: 70% 70%;  
+  animation: bye 2.5s infinite;
+}
+
 
 /* Typewrite effect style */
 
@@ -386,6 +393,19 @@ color: blue;
    }
 }
 
+@keyframes bye {
+  0% { transform: rotate( 0.0deg) }
+  /* The following five values can be played with to make the waving more or less extreme */
+  10% { transform: rotate(14.0deg) } 
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  /* Reset for the last half to pause */
+  60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
+}
+
 /*********************** End ********************/
 
 /*******************  Breakpoints ***************/
@@ -422,9 +442,10 @@ color: blue;
 /* Large devices (desktops, 992px and up) */
  @media (min-width:992px) {
 
-  /*.link a {
-    font-size: 1rem;
-  }*/
+   :root{
+    --font-size: 100%;
+  }
+
 
   .par-1 {
     font-size: 1.3rem;
@@ -451,12 +472,7 @@ color: blue;
 
 /* X-Large devices (large desktops, 1200px and up)*/
 @media (min-width:1200px) {
-  
-  :root{
-    --font-size: 100%;
-  }
-
-  
+ 
   .b-card {
     width: 65%;
   }
