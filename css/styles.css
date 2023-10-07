@@ -197,8 +197,7 @@ canvas {
 
 #about {
   margin-top: 12rem;
-  margin-bottom: 5rem;
-  min-height: 60rem;
+  
 }
 
 .img-about{
@@ -231,11 +230,11 @@ canvas {
 
 /* Heddin Paragraph */
  .hidden-p{
-  display: none;
+  visibility: hidden;
  }
 
  .hidden-p.show{
-  display: inline;
+  visibility: visible;
   animation: fadein 3s; 
  }
 
@@ -465,8 +464,7 @@ color: blue;
 
   #about {
     margin-top: 13rem;
-    margin-bottom: 5rem;
-    min-height: 37rem;
+    margin-bottom: 8rem;
   }
 }
 

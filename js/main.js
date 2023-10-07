@@ -44,15 +44,21 @@
   // Read more
   function readMore(){
     const more = document.getElementById("more")
+    const less = document.getElementById("less")
     const hidden= document.getElementsByClassName("hidden-p")
-    more.addEventListener('click', (e) => {
-      hidden[0].classList.toggle('show')
-      if(hidden[0].className === "hidden-p show"){
-        more.textContent = "Less <<"
-      }else{
-        more.textContent = "More >>"
-      }
-    }) 
+    
+    more.addEventListener("click", (e) => {
+      hidden[0].classList.toggle("show")
+      e.target.parentNode.style.display = "none"
+    })
+
+
+    less.addEventListener("click", (e) => {
+      more.style.display = "inline"
+      hidden[0].classList.toggle("show")
+    })  
+
+
   }
 
   // Slide
