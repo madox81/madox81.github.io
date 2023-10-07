@@ -56,8 +56,6 @@
       more.style.display = "inline"
       hidden[0].classList.toggle("show")
     })  
-
-
   }
 
   // Slide
