@@ -49,7 +49,7 @@
     
     more.addEventListener("click", (e) => {
       hidden[0].classList.toggle("show")
-      e.target.parentNode.style.display = "none"
+      e.currentTarget.style.display = "none"
     })
 
     less.addEventListener("click", (e) => {
