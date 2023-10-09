@@ -106,16 +106,27 @@
 
   // Navbar effect
   function offSet(){
-    const nav = document.querySelector('nav')
+    const nav = document.querySelector("nav")
     const navOffset = nav.offsetTop
-    window.addEventListener('scroll', () => {
-      // const navOffset = nav.offsetTop
+    window.addEventListener("scroll", () => {
       if(window.pageYOffset > navOffset){
-        nav.classList.add('hide')
+        nav.classList.add("hide")
       }else{
-        nav.classList.remove('hide')
+        nav.classList.remove("hide")
       }
     })
+  }
+
+  // Smooth Scrolling Effect
+  function smoothScroll(){
+    const link = document.querySelector(".b-card-inside a")
+    link.addEventListener("click", e => {
+        e.preventDefault()
+        const href = e.currentTarget.getAttribute("href") 
+        document.querySelector(href).scrollIntoView({
+          behavior: "smooth"
+        })
+      })
   }
 
   // Scroll Up
@@ -124,7 +135,6 @@
     scroll.addEventListener("click", () => {
       window.scrollTo({
         top:0,
-        left:0,
         behavior: "smooth"
       })
     })
@@ -162,7 +172,7 @@
 
     switch (window.location.pathname) {
       case "/":
-        particlesJS.load('particles-js', './js/particles.json')
+        particlesJS.load("particles-js", "./js/particles.json")
         setTimeout(typeWriterEffect, 1250)
         break;
       case "/about.html":
@@ -170,6 +180,7 @@
         readMore()
         scrollUp()
         slide()
+        // smoothScroll()
         break;
       case "/contact.html":
         validation()

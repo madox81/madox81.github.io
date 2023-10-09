@@ -29,7 +29,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+/*  scroll-behavior: smooth;*/
   font-size: var(--font-size);
   font-family: 'Roboto', sans-serif;
 }
